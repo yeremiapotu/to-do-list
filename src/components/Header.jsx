@@ -11,7 +11,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
   return (
     <header className="flex justify-between items-center mb-6 p-4 rounded-lg bg-gray-200 dark:bg-gray-800 shadow-md">
-      <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">To-Do List Mingguan</h1>
+      <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">To-Do List</h1>
 
       <div className="flex items-center gap-4">
         {/* Tanggal Awal dan Akhir Minggu */}
@@ -20,8 +20,8 @@ export default function Header({ darkMode, setDarkMode }) {
         </div>
 
         {/* Tombol Dark Mode */}
-        <button onClick={() => setDarkMode(!darkMode)} className="px-3 py-2 rounded-lg bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 hover:opacity-80 transition">
-          {darkMode ? "🌞 Light" : "🌙 Dark"}
+        <button onClick={() => setDarkMode(!darkMode)} className="px-3 py-3 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 hover:opacity-80 transition">
+          {darkMode ? "🌞" : "🌙"}
         </button>
       </div>
     </header>
